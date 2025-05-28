@@ -2,10 +2,13 @@ import Image from "next/image";
 
 import React from "react";
 
-export default function RootPage() {
+// app/page.js
+export default async function Page() {
   return (
-    <div>
-      <h1>Welcome to CA Note</h1>
+    <div className="note--empty-state">
+      <span className="note-text--empty-state">
+        Click a note on the left to view something! 🥺
+      </span>
     </div>
   );
 }
